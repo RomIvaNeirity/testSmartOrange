@@ -11,30 +11,137 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <header class="header container">
       <div class="logo-box">Logo company</div>
-      <button class="arow-right-btn">
+      <div class="arow-right-btn">
         <svg class="arow-right" width="40" height="24">
-          <use href="./image/icons.svg#icon-Arrow-right"></use>
+          <use href="./images/icons.svg#icon-Arrow-right"></use>
         </svg>
-      </button>
-      <button class="arow-left-btn">
+      </div>
+      <div class="arow-left-btn">
         <svg class="arow-left" width="40" height="24">
-          <use href="./image/icons.svg#icon-Arrow-left"></use>
+          <use href="./images/icons.svg#icon-Arrow-left"></use>
         </svg>
-      </button>
-
-      <div class="slider-item slider-1 current-slide">
-        <h1 class="slider-header">Test slider</h1>
+      </div>
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide slide-1">
+            <h1 class="slider-header">Test slider</h1>
+          </div>
+          <div class="swiper-slide slide-2">
+            <h1 class="slider-header">Owoooooo</h1>
+          </div>
+        </div>
+        <div class="swiper-scrollbar"></div>
       </div>
     </header>
     <main>
-      <section class="container objects"></section>
+      <section class="container section-objects">
+        <h2 class="section-objects-title">Збудовані об'єкти</h2>
+        <ul class="obj-type-selection-list">
+          <li class="obj-type-item">Усі</li>
+          <li class="obj-type-item">Житловий</li>
+          <li class="obj-type-item">Громадський</li>
+          <li class="obj-type-item">Спортивний</li>
+        </ul>
+        <div class="obj-kard-container"></div>
+      </section>
     </main>
-    <footer></footer>
+    <footer class="footer container">
+      <div class="footer-contacts">
+        <h2 class="footer-contacts-header">Контакти</h2>
+        <address>
+          <div class="footer-contacts-grid-container">
+            <div class="footer-contacts-main-office">
+              <h3 class="footer-contacts-subheader">Головний офіс:</h3>
+              <a
+                href="mailto:SmartorangeTest@gmail.com"
+                class="footer-email-link"
+                >SmartorangeTest@gmail.com</a
+              >
+              <a
+                href="https://www.google.com/maps/"
+                class="footer-googlemaps-link"
+                >ВІДКРИТИ НА GOOGLEMAPS</a
+              >
+            </div>
+            <div class="footer-contacts-social-links">
+              <h3 class="footer-contacts-subheader">Наші соцмережі:</h3>
+              <ul class="footer-social-link-list">
+                <li>
+                  <svg class="arow-left" width="46" height="46">
+                    <use href="./images/icons.svg#icon-in"></use>
+                  </svg>
+                </li>
+                <li>
+                  <svg class="arow-left" width="46" height="46">
+                    <use href="./images/icons.svg#icon-yt"></use>
+                  </svg>
+                </li>
+                <li>
+                  <svg class="arow-left" width="46" height="46">
+                    <use href="./images/icons.svg#icon-fb"></use>
+                  </svg>
+                </li>
+                <li>
+                  <svg class="arow-left" width="46" height="46">
+                    <use href="./images/icons.svg#icon-tt"></use>
+                  </svg>
+                </li>
+              </ul>
+            </div>
+            <div class="footer-contacts-department-tel">
+              <h3 class="footer-contacts-subheader">Телефони відділів:</h3>
+              <ul class="footer-tel-list">
+                <li class="footer-tel-list-item">
+                  <svg width="14" height="14">
+                    <use href="./images/icons.svg#icon-Phone"></use>
+                  </svg>
+                  <a href="tel:+380(044)4444444" class="footer-tel-link"
+                    >(044) 444-44-44</a
+                  ><span class="footer-tel-department">(ЮРИДИЧНИЙ ВІДДІЛ)</span>
+                </li>
+                <li class="footer-tel-list-item">
+                  <svg width="14" height="14">
+                    <use href="./images/icons.svg#icon-Phone"></use>
+                  </svg>
+                  <a href="tel:+380(055)5555555" class="footer-tel-link"
+                    >(055) 555-55-55</a
+                  ><span class="footer-tel-department">(БУХГАЛТЕРІЯ)</span>
+                </li>
+              </ul>
+            </div>
+            <div class="footer-contacts-email">
+              <h3 class="footer-contacts-subheader">Email:</h3>
+              <a href="mailto:office@smarto.ua" class="footer-email-link"
+                >office@smarto.ua</a
+              >
+            </div>
+          </div>
+        </address>
+      </div>
+      <div class="footer-images">
+        <h2 class="footer-images-header">Якість</h2>
+        <img src="./images/Ellipse 502.jpg" class="footer-main-image" />
+        <img src="./images/Ellipse 503.jpg" class="footer-bg-image" />
+        <h3 class="footer-images-subheader">понад усе</h3>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script defer type="module" src="./js/main.js"></script>
   </body>
 </html>

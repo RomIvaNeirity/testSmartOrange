@@ -4,7 +4,9 @@ body {
   background-color: #ffffff;
 }
 
-h1 {
+h1,
+h2,
+h3 {
   margin: 0;
   padding: 0;
 }
@@ -15,6 +17,8 @@ a {
 
 ul {
   list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 button {
   cursor: pointer;
@@ -22,35 +26,18 @@ button {
 
 .container {
   max-width: 1920px;
+  padding-left: 60px;
+  padding-right: 60px;
 }
 
 .header {
+  padding: 0;
   margin: 0 auto;
   width: 100%;
+  height: 468px;
   position: relative;
 }
 
-.slider-item {
-  display: flex;
-  width: 100%;
-  height: 468px;
-  padding: 191px 0;
-}
-
-.slider-1 {
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  background-image: url(../image/bg.jpg);
-}
-
-/* .slider-2 {
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  background-image: url(../image/bg.jpg);
-}
- */
 .logo-box {
   font-size: 32px;
   font-weight: 500;
@@ -62,9 +49,58 @@ button {
   top: 24px;
   left: 50%;
   transform: translate(-50%);
+  z-index: 999;
 }
 
+.arow-right-btn {
+  border: none;
+  background: transparent;
+  position: absolute;
+  top: 50%;
+  right: 60px;
+
+  z-index: 999;
+}
+
+.arow-left-btn {
+  border: none;
+  background: transparent;
+  position: absolute;
+  top: 50%;
+  left: 60px;
+
+  z-index: 999;
+}
+
+.clover-btn {
+  position: static;
+  z-index: 99;
+}
+
+.swiper {
+  position: relative;
+  width: 100%;
+}
+
+.swiper-slide {
+  display: flex;
+  width: 100%;
+  height: 468px;
+  padding: 191px 0;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.slide-1 {
+  background-image: url(../images/bg-slider-1.jpg);
+}
+
+.slide-2 {
+  background-image: url(../images/bg-slider-2.jpg);
+}
 .slider-header {
+  text-align: center;
   height: fit-content;
   font-size: 96px;
   font-weight: 400;
@@ -74,20 +110,180 @@ button {
   color: #eff3f5;
 }
 
-.arow-right-btn {
-  border: none;
-  background: transparent;
-  position: absolute;
-  top: 50%;
-  right: 20px;
-  transform: translate(-50%);
+/* __SECTION-OBJECTS */
+
+.section-objects {
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
-.arow-left-btn {
-  border: none;
-  background: transparent;
+.section-objects-title {
+  font-size: 48px;
+  font-weight: 500;
+  letter-spacing: -0.04em;
+  color: #0a0f13;
+  margin-bottom: 40px;
+}
+
+.obj-type-selection-list {
+  display: flex;
+  gap: 60px;
+}
+
+.obj-type-item {
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  color: #0a0f13;
+}
+
+/* __FOOTER__ */
+
+.footer {
+  margin: 0 auto;
+  max-width: 1800px;
+  height: 680px;
+  display: flex;
+}
+
+.footer-contacts {
+  padding: 52px 0 97px;
+  width: 970px;
+}
+
+.footer-contacts-header {
+  font-size: 96px;
+  font-weight: 400;
+  letter-spacing: -0.04em;
+  color: #0a0f13;
+  margin-bottom: 80px;
+}
+
+.footer-contacts-grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* два стовпці */
+  grid-template-rows: auto auto; /* два рядки */
+  row-gap: 80px;
+  column-gap: 40px;
+}
+
+.footer-contacts-grid-container > div {
+  background-color: #f5f5f5; /* для наочності */
+}
+
+.footer-contacts-subheader {
+  font-style: normal;
+  margin-bottom: 23px;
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  color: #0a0f13;
+}
+
+.footer-contacts-main-office {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-email-link {
+  font-style: normal;
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  color: #0a0f13;
+}
+
+.footer-googlemaps-link {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  font-style: normal;
+  font-size: 14px;
+  font-weight: 400;
+  margin-top: 41px;
+  color: #eff3f5;
+  border-radius: 100px;
+  padding: 0 20px;
+  width: 223px;
+  height: 46px;
+  background: #0a0f13;
+  letter-spacing: -0.02em;
+}
+
+.footer-social-link-list {
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
+}
+
+.footer-tel-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.footer-tel-list-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.footer-tel-link {
+  font-style: normal;
+  width: 160px;
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  color: #0a0f13;
+}
+
+.footer-tel-department {
+  font-size: 14px;
+  font-weight: 500;
+  font-style: normal;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: #737373;
+}
+
+.footer-images {
+  position: relative;
+
+  display: flex;
+
+  width: 830px;
+  height: 680px;
+}
+
+.footer-main-image {
+  border-radius: 50%;
+  margin-right: -530px; /* від’ємний відступ створює накладання */
+  z-index: 2;
+}
+
+.footer-bg-image {
+  z-index: 1;
+}
+
+.footer-images-header {
   position: absolute;
-  top: 50%;
-  left: 60px;
-  transform: translate(-50%);
+  top: 50px;
+  font-size: 96px;
+  font-weight: 400;
+  letter-spacing: -0.04em;
+  z-index: 3;
+  color: #eff3f5;
+  mix-blend-mode: exclusion;
+}
+.footer-images-subheader {
+  position: absolute;
+  bottom: 50px;
+  right: 150px;
+  font-size: 96px;
+  font-weight: 400;
+  letter-spacing: -0.04em;
+  z-index: 3;
+  color: #eff3f5;
+  mix-blend-mode: exclusion;
 }
