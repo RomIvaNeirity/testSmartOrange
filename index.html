@@ -53,12 +53,19 @@
       <section class="container section-objects">
         <h2 class="section-objects-title">Збудовані об'єкти</h2>
         <ul class="obj-type-selection-list">
-          <li class="obj-type-item">Усі</li>
-          <li class="obj-type-item">Житловий</li>
-          <li class="obj-type-item">Громадський</li>
-          <li class="obj-type-item">Спортивний</li>
+          <li class="obj-type-item selected-all" data-type="all">Усі</li>
+          <li class="obj-type-item selected-comfort" data-type="comfort">
+            Комфорт
+          </li>
+          <li class="obj-type-item selected-business" data-type="business">
+            Бізнес
+          </li>
+          <li class="obj-type-item selected-premium" data-type="premium">
+            Преміум
+          </li>
         </ul>
-        <div class="obj-kard-container"></div>
+        <div class="obj-card-container"></div>
+        <button class="load-more-btn">Завантажити ще</button>
       </section>
     </main>
     <footer class="footer container">
