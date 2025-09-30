@@ -112,7 +112,7 @@ button {
   color: #eff3f5;
 }
 
-/* __SECTION-OBJECTS */
+/* __SECTION-OBJECTS__ */
 
 .section-objects {
   margin: 0 auto;
@@ -305,14 +305,10 @@ button {
 
 .footer-contacts-grid-container {
   display: grid;
-  grid-template-columns: 1fr 1fr; /* два стовпці */
-  grid-template-rows: auto auto; /* два рядки */
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
   row-gap: 80px;
   column-gap: 40px;
-}
-
-.footer-contacts-grid-container > div {
-  background-color: #f5f5f5; /* для наочності */
 }
 
 .footer-contacts-subheader {
